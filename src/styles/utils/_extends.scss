@@ -38,7 +38,8 @@
   transition: border-color $effect-duration;
 
   &::placeholder {
-    opacity: 0.7;
+    @extend %fm-poppins_w-600_fs-15_lh-100_c-FFFFFF;
+    opacity: 1;
   }
   &:focus::placeholder {
     opacity: 1;
