@@ -1,7 +1,48 @@
-@import 'utils';
+@import 'utils/vars';
+@import 'utils/mixins';
 @import 'fonts';
-@import 'typography';
+@import 'utils/extends';
+@import 'utils/typography';
+@import 'blocks/container';
+@import 'blocks/header/header';
+@import 'blocks/header/right';
+@import 'blocks/header/center';
+@import 'blocks/header/nav';
+@import 'blocks/menu';
+@import 'blocks/home';
+@import 'blocks/slider';
+@import 'blocks/header/top';
+@import 'blocks/page-menu';
+@import 'blocks/about-us';
+@import 'blocks/our-expertise';
+@import 'blocks/services';
+@import 'blocks/testimonials';
+@import 'blocks/banner';
+@import 'blocks/contact-us';
+@import 'blocks/footer';
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  background: $c-gray;
+  display: block;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  line-height: 1;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }

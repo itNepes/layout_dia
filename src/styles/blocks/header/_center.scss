@@ -1,0 +1,9 @@
+.header__center {
+  align-items: center;
+  display: none;
+
+  @include on-desktop {
+    display: flex;
+    column-gap: 48px;
+  }
+}

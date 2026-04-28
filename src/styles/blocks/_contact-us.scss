@@ -1,0 +1,125 @@
+.contact-us {
+  @include padding-block-section-bigger;
+  background-color: $hd-cs-ft-bg-color;
+  border-radius: 20px 20px 0 0;
+
+  &__container {
+    @include page-grid;
+    row-gap: 80px;
+
+    @include on-tablet {
+      row-gap: 120px;
+    }
+
+    @include on-desktop-small {
+      row-gap: 0;
+    }
+  }
+
+  &__side {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      &--top,
+      &--bottom {
+        grid-column: span 4;
+      }
+    }
+
+    @include on-desktop-small {
+      &--top {
+        grid-column: 1 / 6;
+      }
+
+      &--bottom {
+        grid-column: 8 / -1;
+      }
+    }
+  }
+
+  &__title {
+    @extend %fm-poppins_w-600_fs-32_lh-130_c-ffffff;
+  }
+
+  &__side--bottom &__title {
+    margin-bottom: 56px;
+  }
+
+  &__block-item-text {
+    @extend %fm-poppins_w-700_fs-13_lh-100_c-c0cdd7;
+  }
+
+  &__block-item + &__block-item {
+    margin-top: 48px;
+  }
+
+  &__block-item-data {
+    @extend %fm-opensans_w-600_fs-24_lh-150_c-ffffff;
+  }
+
+  &__socials {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+    margin-top: 48px;
+
+    @include on-desktop-small {
+      padding-inline: 0;
+    }
+  }
+
+  &__form-input {
+    resize: none;
+    @extend %input;
+  }
+
+  &__form-input + &__form-input {
+    margin-top: 40px;
+  }
+
+  &__form-button {
+    margin-top: 56px;
+
+    @extend %button;
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+    display: block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+      hue-rotate(347deg) brightness(105%) contrast(102%);
+    transition:
+      filter 0.3s ease,
+      transform 0.3s ease;
+
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(34%) sepia(96%)
+        saturate(1911%) hue-rotate(214deg) brightness(100%) contrast(94%);
+      transform: translateY(-2px);
+    }
+  }
+
+  .icon--facebook {
+    background-image: url(../images/social-icons/facebook.png);
+  }
+
+  .icon--twitter {
+    background-image: url(../images/social-icons/twitter.png);
+  }
+
+  .icon--instagram {
+    background-image: url(../images/social-icons/instagram.png);
+  }
+}

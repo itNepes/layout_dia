@@ -1,0 +1,41 @@
+.header__burger {
+  display: block;
+  width: 18px;
+  height: 11px;
+  background-image: url('../images/icons/icon-menu.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include on-desktop {
+    display: none !important;
+  }
+}
+
+.nav {
+  display: none;
+
+  @include on-desktop {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+  }
+
+  &__item {
+    font-family: $font-family;
+    text-decoration: none;
+    font-weight: 700;
+    color: $hd-subtitle-title-color;
+    transition: transform 0.3s;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+}

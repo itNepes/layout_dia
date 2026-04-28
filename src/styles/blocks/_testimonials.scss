@@ -1,0 +1,205 @@
+.testimonials {
+  @include page-grid;
+  @include padding-block-section-bigger;
+
+  &__top {
+    grid-column: 1 / -1;
+  }
+
+  &__sub-title {
+    margin: 0 0 16px 0;
+    @extend %fm-poppins_w-700_fs-13_lh-100_c-C0CDD7;
+  }
+
+  &__title {
+    margin: 0;
+    @extend %fm-poppins_w-600_fs-32_lh-150_c-253757;
+
+    @include on-tablet {
+      width: 200px;
+      max-width: 100%;
+    }
+  }
+
+  &__content {
+    grid-column: 1 / -1;
+    display: grid;
+    row-gap: 24px;
+    margin-top: 48px;
+    justify-items: center;
+  }
+
+  &__card {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: $card-bg-color;
+    border-radius: 30px;
+    overflow: visible;
+    width: 100%;
+    max-width: 280px;
+    justify-self: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+
+    &.reveal.is-visible:hover,
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    @include on-tablet {
+      max-width: 558px;
+    }
+  }
+
+  &__quotes-img {
+    display: block;
+  }
+
+  @include on-tablet {
+    &__content {
+      margin-top: 56px;
+      row-gap: 30px;
+      column-gap: 30px;
+    }
+  }
+
+  @include on-desktop-small {
+    &__content {
+      margin-top: 85px;
+      row-gap: 0;
+      column-gap: 20px;
+      grid-template-columns: repeat(3, minmax(0, 296px));
+      justify-content: center;
+      justify-items: stretch;
+    }
+
+    &__card {
+      grid-column: auto;
+      max-width: 296px;
+      width: 100%;
+      padding-inline: 44px;
+    }
+  }
+
+  @include on-desktop {
+    &__content {
+      grid-template-columns: repeat(3, minmax(0, 362px));
+    }
+
+    &__card {
+      max-width: 362px;
+    }
+  }
+
+  &__card-text {
+    margin: 0;
+    @extend %fm-opensans_w-600_fs-13_lh-150_c-6C788BF;
+    width: 196px;
+    margin-inline: auto;
+
+    @include on-tablet {
+      width: 362px;
+    }
+
+    @include on-desktop-small {
+      width: 196px;
+      min-height: 96px;
+    }
+
+    @include on-desktop {
+      width: 250px;
+    }
+  }
+
+  &__card-name {
+    margin: 0;
+    margin-top: 16px;
+    @extend %fm-opensans_w-600_fs-13_lh-150_c-253757;
+  }
+
+  &__card-profesion {
+    margin: 4px 0 32px 0;
+    @extend %fm-poppins_w-700_fs-13_lh-100_c-C0CDD7;
+  }
+
+  &__quotes {
+    aspect-ratio: 1 / 1;
+    margin-inline: auto;
+    width: 21px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 11px;
+  }
+
+  &__card-photo-wrapper {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__card-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__photo-holder {
+    position: relative;
+    width: max-content;
+    margin-inline: auto;
+    margin-top: 32px;
+    margin-bottom: 68px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      height: 44px;
+      border-radius: 12px;
+      background-color: $button-bg-color;
+    }
+
+    &::before {
+      top: 12%;
+      left: 0;
+      transform: translate(-28%, -35%) rotate(-60deg);
+    }
+
+    &::after {
+      bottom: 12%;
+      right: 0;
+      transform: translate(28%, 35%) rotate(-60deg);
+    }
+  }
+
+  &__photo {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    @include on-tablet {
+      width: 140px;
+      height: 140px;
+    }
+
+    @include on-desktop-small {
+      width: 110px;
+      height: 110px;
+    }
+
+    @include on-desktop {
+      width: 140px;
+      height: 140px;
+    }
+  }
+}
