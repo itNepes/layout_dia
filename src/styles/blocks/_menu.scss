@@ -9,7 +9,7 @@
 
   &__top {
     display: flex;
-    column-gap: 12px;
+    column-gap: 32px;
     align-items: center;
 
     padding-block: 20px;
@@ -107,6 +107,12 @@
     text-decoration: none;
 
     filter: brightness(0) invert(1);
+
+    .close {
+      display: block;
+      width: 18px;
+      height: auto;
+    }
   }
 }
 
