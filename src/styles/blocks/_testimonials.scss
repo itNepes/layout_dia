@@ -1,13 +1,14 @@
 .testimonials {
   @include page-grid;
   @include padding-block-section-bigger;
+  overflow-x: clip;
 
   &__top {
     grid-column: 1 / -1;
   }
 
   &__sub-title {
-    margin: 0 0 16px 0;
+    margin: 0 0 16px;
     @extend %fm-poppins_w-700_fs-13_lh-100_c-C0CDD7;
   }
 
@@ -120,7 +121,7 @@
   }
 
   &__card-profesion {
-    margin: 4px 0 32px 0;
+    margin: 4px 0 32px;
     @extend %fm-poppins_w-700_fs-13_lh-100_c-C0CDD7;
   }
 
