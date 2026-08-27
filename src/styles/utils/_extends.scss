@@ -4,19 +4,24 @@
 }
 
 %button {
+  @extend %fm-poppins-w-600-fs-15-lh-100-c-ffffff;
+
+  cursor: pointer;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2060f6;
+
   width: 100%;
   max-width: 100%;
   height: 56px;
   border: none;
-  cursor: pointer;
   border-radius: 8px;
-  text-transform: none;
+
   text-decoration: none;
-  @extend %fm-poppins_w-600_fs-15_lh-100_c-FFFFFF;
+  text-transform: none;
+
+  background-color: #2060f6;
 
   @include on-tablet {
     width: 264px;
@@ -26,21 +31,23 @@
 }
 
 %input {
+  @extend %fm-poppins-w-600-fs-15-lh-100-c-ffffff;
+
   box-sizing: border-box;
-  background-color: $hd-cs-ft-bg-color;
   height: 40px;
+  padding: 0 0 12px;
   border: none;
   border-bottom: 2px solid $hd-subtitle-title-color;
-  @extend %fm-poppins_w-600_fs-15_lh-100_c-FFFFFF;
 
-  padding: 0 0 12px;
+  background-color: $hd-cs-ft-bg-color;
   outline: none;
+
   transition: border-color $effect-duration;
 
   &::placeholder {
     font: inherit;
-    letter-spacing: inherit;
     color: $third-text-color;
+    letter-spacing: inherit;
     opacity: 1;
   }
   &:focus::placeholder {
@@ -56,7 +63,8 @@
   &:-webkit-autofill:focus,
   &:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 1000px $hd-cs-ft-bg-color inset !important;
-    -webkit-text-fill-color: $hd-subtitle-title-color !important;
     transition: background-color 5000s ease-in-out 0s;
+
+    -webkit-text-fill-color: $hd-subtitle-title-color !important;
   }
 }

@@ -1,13 +1,16 @@
 .header__burger {
+  cursor: pointer;
+
   display: block;
+
   width: 18px;
   height: 11px;
-  background-image: url('../images/icons/icon-menu.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
   border: none;
+
   background-color: transparent;
-  cursor: pointer;
+  background-image: url('../images/icons/icon-menu.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @include on-desktop {
     display: none !important;
@@ -19,20 +22,21 @@
 
   @include on-desktop {
     display: flex;
-    align-items: center;
     column-gap: 48px;
+    align-items: center;
   }
 
   &__item {
     font-family: $font-family;
-    text-decoration: none;
-    font-weight: 700;
-    color: $hd-subtitle-title-color;
-    transition: transform 0.3s;
     font-size: 13px;
+    font-weight: 700;
     line-height: 1.5;
-    letter-spacing: 3px;
+    color: $hd-subtitle-title-color;
+    text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 3px;
+
+    transition: transform 0.3s;
 
     &:hover {
       transform: translateY(-4px);

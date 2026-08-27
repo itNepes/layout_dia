@@ -1,12 +1,13 @@
 .banner {
   @include padding-block-section-bigger;
+
   background-color: $card-bg-color;
 
   @include on-tablet {
     background-image: url('../images/banner/bg-banner.png');
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   &__content {
@@ -14,11 +15,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     text-align: center;
   }
 
   &__title {
-    @extend %fm-poppins_w-600_fs-44_lh-120_c-253757;
+    @extend %fm-poppins-w-600-fs-44-lh-120-c-253757;
   }
 
   &__text {
@@ -26,11 +28,12 @@
       max-width: 754px;
       margin-inline: auto;
     }
-    @extend %fm-opensans_w-600_fs-22_lh-150_c-6C788BF;
+
+    @extend %fm-opensans-w-600-fs-22-lh-150-c-6c788bf;
   }
 
   &__button {
     @extend %button;
-    @extend %fm-poppins_w-600_fs-15_lh-100_c-FFFFFF;
+    @extend %fm-poppins-w-600-fs-15-lh-100-c-ffffff;
   }
 }

@@ -14,11 +14,13 @@
 }
 
 .logo {
+  transform-origin: center;
+  transform: scale(1);
+
   display: block;
+
   width: $logo-width;
   height: auto;
-  transform: scale(1);
-  transform-origin: center;
 
   &:hover {
     animation: logo-pop 0.9s cubic-bezier(0.22, 1, 0.36, 1);

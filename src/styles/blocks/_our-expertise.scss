@@ -1,23 +1,27 @@
 .our-expertise {
-  background-color: #ffffff;
-  border-radius: 30px;
-  display: block;
-  opacity: 1;
   transform: translateY(0) scale(1);
 
+  display: block;
+
+  border-radius: 30px;
+
+  opacity: 1;
+  background-color: #fff;
+
   &__content {
-    row-gap: 56px;
     display: grid;
+    row-gap: 56px;
     padding-block: 72px;
 
     @include on-tablet {
-      padding-block: 128px;
       row-gap: 64px;
+      padding-block: 128px;
     }
   }
 
   &__title {
-    @extend %fm-poppins_w-600_fs-44_lh-120_c-253757;
+    @extend %fm-poppins-w-600-fs-44-lh-120-c-253757;
+
     text-align: center;
 
     @include on-tablet {
@@ -27,31 +31,32 @@
   }
 
   &__cards-content {
-    row-gap: 56px;
     --columns: 2;
-    grid-template-columns: repeat(var(--columns), 1fr);
-    column-gap: 20px;
+
     display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: 56px 20px;
     opacity: 1;
 
     @include on-tablet {
       --columns: 6;
-      column-gap: 30px;
-      row-gap: 72px;
+
+      gap: 72px 30px;
     }
 
     @include on-desktop-small {
       --columns: 12;
+
       column-gap: 40px;
       justify-content: space-between;
     }
   }
 
   &__card {
-    flex-direction: column;
-    align-items: center;
     display: flex;
     grid-column: 1 / -1;
+    flex-direction: column;
+    align-items: center;
 
     transition: transform 0.3s ease-in-out;
 
@@ -66,24 +71,26 @@
   }
 
   &__card-photo {
-    width: 166px;
     aspect-ratio: 1 / 1;
+    width: 166px;
     border-radius: 30px;
   }
 
   &__card-title {
-    @extend %fm-poppins_w-600_fs-20_lh-140_c-253757;
-    margin-bottom: 16px;
+    @extend %fm-poppins-w-600-fs-20-lh-140-c-253757;
+
     margin-top: 32px;
+    margin-bottom: 16px;
     text-align: center;
   }
 
   &__card-text {
-    @extend %fm-opensans_w-400_fs-14_lh-150_c-6C788B;
-    text-align: center;
-    margin-inline: auto;
+    @extend %fm-opensans-w-400-fs-14-lh-150-c-6c788b;
+
     width: 100%;
     max-width: 280px;
+    margin-inline: auto;
+    text-align: center;
 
     @include on-tablet {
       max-width: 364px;

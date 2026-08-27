@@ -1,9 +1,12 @@
 .header {
-  z-index: 500;
-  background-color: $hd-cs-ft-bg-color;
   position: sticky;
+  z-index: 500;
   top: 0;
+
   width: 100%;
+
+  background-color: $hd-cs-ft-bg-color;
+
   transition: transform 0.5s ease-in-out;
 
   &--hidden {
@@ -12,8 +15,8 @@
 
   &__content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding-block: 20px;
 
     @include on-desktop {
@@ -23,7 +26,7 @@
 
   &__top--left {
     display: flex;
-    align-items: center;
     column-gap: 32px;
+    align-items: center;
   }
 }

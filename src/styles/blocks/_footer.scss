@@ -4,17 +4,18 @@
 
 .footer__content {
   @include page-grid;
-  padding-block: 80px 64px;
+
   row-gap: 40px;
+  padding-block: 80px 64px;
 
   @include on-tablet {
-    padding-block: 120px 80px;
     row-gap: 48px;
+    padding-block: 120px 80px;
   }
 
   @include on-desktop-small {
-    align-items: center;
     row-gap: 0;
+    align-items: center;
   }
 }
 
@@ -29,11 +30,13 @@
 }
 
 .footer__logo img {
+  transform-origin: center;
+  transform: scale(1);
+
   display: block;
+
   width: $logo-width;
   height: auto;
-  transform: scale(1);
-  transform-origin: center;
 }
 
 .footer__logo:hover img {
@@ -41,25 +44,24 @@
 }
 
 .footer__nav.nav {
-  grid-column: 1 / -1;
   display: flex;
+  grid-column: 1 / -1;
   flex-wrap: wrap;
+  gap: 20px 24px;
   align-items: center;
-  row-gap: 20px;
-  column-gap: 24px;
 
   @include on-tablet {
+    gap: 0 40px;
     justify-content: center;
-    row-gap: 0;
-    column-gap: 40px;
     width: 100%;
   }
 
   @include on-desktop-small {
     grid-column: 2 / -1;
-    margin-left: auto;
-    justify-content: flex-end;
     flex-wrap: nowrap;
     column-gap: 48px;
+    justify-content: flex-end;
+
+    margin-left: auto;
   }
 }

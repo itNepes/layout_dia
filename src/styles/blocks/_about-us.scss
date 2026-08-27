@@ -1,36 +1,42 @@
 .about-us {
   &__content {
-    text-align: center;
-    justify-content: center;
-    row-gap: 24px;
-    display: grid;
-    padding-block: 120px;
-    opacity: 1;
     transform: translateY(0) scale(1);
+
+    display: grid;
+    row-gap: 24px;
+    justify-content: center;
+
+    padding-block: 120px;
+
+    text-align: center;
+
+    opacity: 1;
   }
 
   &__title {
-    @extend %fm-poppins_w-600_fs-32_lh-150_c-253757;
+    @extend %fm-poppins-w-600-fs-32-lh-150-c-253757;
+
     margin: 0;
   }
 
   &__text {
-    @extend %fm-opensans_w-600_fs-22_lh-150_c-6C788BF;
+    @extend %fm-opensans-w-600-fs-22-lh-150-c-6c788bf;
+
     margin: 0;
 
     @include on-tablet {
-      font-size: 24px;
       max-width: 558px;
+      font-size: 24px;
     }
 
     @include on-desktop-small {
-      font-size: 24px;
       max-width: 716px;
+      font-size: 24px;
     }
 
     @include on-desktop {
-      font-size: 24px;
       max-width: 754px;
+      font-size: 24px;
     }
   }
 }

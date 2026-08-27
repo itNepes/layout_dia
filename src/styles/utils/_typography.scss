@@ -1,184 +1,183 @@
 h1 {
   @extend %h1;
+
   margin: 0;
 }
 
 body {
   display: block;
+
   margin: 0;
-  border: 0;
   padding: 0;
+  border: 0;
+
   font: inherit;
   line-height: 1;
 }
 
-%fm-poppins_w-700_fs-13_lh-150_c-FFFFFF {
+%fm-poppins-w-700-fs-13-lh-150-c-ffffff {
+  font-family: Poppins, sans-serif;
   font-size: 13px;
   font-weight: 700;
-  font-family: Poppins;
   line-height: 150%;
-  letter-spacing: 3px;
   color: $hd-subtitle-title-color;
+  letter-spacing: 3px;
 }
 
-%fm-poppins_w-600_fs-52_lh-120_c-FFFFFF {
+%fm-poppins-w-600-fs-52-lh-120-c-ffffff {
+  font-family: Poppins, sans-serif;
   font-size: 52px;
   font-weight: 600;
-  font-family: Poppins;
   line-height: 120%;
+  color: $hd-subtitle-title-color;
   letter-spacing: -2px;
-  color: $hd-subtitle-title-color;
 }
 
-%fm-poppins_w-600_fs-52_lh-150_c-253757 {
+%fm-poppins-w-600-fs-52-lh-150-c-253757 {
+  font-family: Poppins, sans-serif;
   font-size: 52px;
   font-weight: 600;
-  font-family: Poppins;
   line-height: 150%;
-  letter-spacing: 0;
   color: $vector-section-title-color;
+  letter-spacing: 0;
 }
 
-%fm-poppins_w-600_fs-15_lh-100_c-FFFFFF {
-  font-family: Poppins;
-  font-weight: 600;
+%fm-poppins-w-600-fs-15-lh-100-c-ffffff {
+  font-family: Poppins, sans-serif;
   font-size: 15px;
+  font-weight: 600;
   line-height: 100%;
-  letter-spacing: 0;
   color: $hd-subtitle-title-color;
+  letter-spacing: 0;
 }
 
-%fm-poppins_w-600_fs-32_lh-150_c-253757 {
-  font-family: Poppins;
-  font-weight: 600;
+%fm-poppins-w-600-fs-32-lh-150-c-253757 {
+  font-family: Poppins, sans-serif;
   font-size: 32px;
+  font-weight: 600;
   line-height: 150%;
-  letter-spacing: 0;
   color: $vector-section-title-color;
+  letter-spacing: 0;
 }
-%fm-poppins_w-600_fs-32_lh-130_c-ffffff {
-  font-family: Poppins;
-  font-weight: 600;
+
+%fm-poppins-w-600-fs-32-lh-130-c-ffffff {
+  font-family: Poppins, sans-serif;
   font-size: 32px;
+  font-weight: 600;
   line-height: 130%;
-  letter-spacing: 0;
   color: $hd-subtitle-title-color;
+  letter-spacing: 0;
 }
 
-%fm-poppins_w-600_fs-44_lh-120_c-253757 {
-  font-family: Poppins;
-  font-weight: 600;
+%fm-poppins-w-600-fs-44-lh-120-c-253757 {
+  font-family: Poppins, sans-serif;
   font-size: 44px;
+  font-weight: 600;
   line-height: 120%;
-  letter-spacing: 0;
   color: $vector-section-title-color;
+  letter-spacing: 0;
 }
-%fm-poppins_w-600_fs-20_lh-140_c-253757 {
-  font-family: Poppins;
-  font-weight: 600;
+
+%fm-poppins-w-600-fs-20-lh-140-c-253757 {
+  font-family: Poppins, sans-serif;
   font-size: 20px;
+  font-weight: 600;
   line-height: 140%;
-  letter-spacing: 0;
+  color: $vector-section-title-color;
   text-align: center;
-  color: $vector-section-title-color;
-}
-%fm-poppins_w-600_fs-13_lh-100_c-C0CDD7 {
-  font-family: Poppins;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 100%;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: $third-text-color;
+  letter-spacing: 0;
 }
 
-%fm-poppins_w-700_fs-13_lh-100_c-C0CDD7 {
-  font-family: Poppins;
-  font-weight: 700;
+%fm-poppins-w-600-fs-13-lh-100-c-c0cdd7 {
+  font-family: Poppins, sans-serif;
   font-size: 13px;
-  line-height: 100%;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: $third-text-color;
-}
-%fm-poppins_w-700_fs-13_lh-100_c-c0cdd7 {
-  font-family: Poppins;
   font-weight: 700;
-  font-size: 13px;
   line-height: 100%;
-  letter-spacing: 3px;
-  text-transform: uppercase;
   color: $third-text-color;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
-%fm-poppins_w-700_fs-13_lh-100_c-2060F6 {
-  font-family: Poppins;
-  font-weight: 700;
+%fm-poppins-w-700-fs-13-lh-100-c-c0cdd7 {
+  font-family: Poppins, sans-serif;
   font-size: 13px;
+  font-weight: 700;
   line-height: 100%;
-  letter-spacing: 3px;
+  color: $third-text-color;
   text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+%fm-poppins-w-700-fs-13-lh-100-c-2060f6 {
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 100%;
   color: $button-bg-color;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
-%fm-opensans_w-400_fs-18_lh-150_c-FFFFFF {
-  color: $hd-subtitle-title-color;
-  font-family: Open Sans;
-  font-weight: 400;
+%fm-opensans-w-400-fs-18-lh-150-c-ffffff {
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  line-height: 150%;
-  letter-spacing: 0;
-}
-
-%fm-opensans_w-600_fs-22_lh-150_c-6C788BF {
-  color: $main-text-color;
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 150%;
-  letter-spacing: 0;
-}
-
-%fm-opensans_w-400_fs-14_lh-150_c-6C788B {
-  color: $main-text-color;
-  font-family: Open Sans;
   font-weight: 400;
-  font-size: 14px;
   line-height: 150%;
-  letter-spacing: 0;
-}
-
-%fm-opensans_w-600_fs-13_lh-150_c-6C788BF {
-  color: $main-text-color;
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 150%;
-  letter-spacing: 0;
-}
-%fm-opensans_w-600_fs-13_lh-150_c-253757 {
-  color: $vector-section-title-color;
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 150%;
-  letter-spacing: 0;
-}
-
-%fm-opensans_w-600_fs-24_lh-150_c-6C788BF {
-  color: $main-text-color;
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 150%;
-  letter-spacing: 0;
-}
-%fm-opensans_w-600_fs-24_lh-150_c-ffffff {
   color: $hd-subtitle-title-color;
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 150%;
   letter-spacing: 0;
+}
+
+%fm-opensans-w-600-fs-22-lh-150-c-6c788bf {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 150%;
+  color: $main-text-color;
+  letter-spacing: 0;
+}
+
+%fm-opensans-w-400-fs-14-lh-150-c-6c788b {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: $main-text-color;
+  letter-spacing: 0;
+}
+
+%fm-opensans-w-600-fs-13-lh-150-c-6c788bf {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 150%;
+  color: $main-text-color;
+  letter-spacing: 0;
+}
+
+%fm-opensans-w-600-fs-13-lh-150-c-253757 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 150%;
+  color: $vector-section-title-color;
+  letter-spacing: 0;
+}
+
+%fm-opensans-w-600-fs-24-lh-150-c-6c788bf {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  color: $main-text-color;
+  letter-spacing: 0;
+}
+
+%fm-opensans-w-600-fs-24-lh-150-c-ffffff {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 150%;
+  color: $hd-subtitle-title-color;
   text-decoration: none;
+  letter-spacing: 0;
 }

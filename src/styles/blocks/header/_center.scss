@@ -1,6 +1,6 @@
 .header__center {
-  align-items: center;
   display: none;
+  align-items: center;
 
   @include on-desktop {
     display: flex;
